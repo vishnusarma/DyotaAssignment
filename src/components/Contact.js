@@ -19,7 +19,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_o6yr639', 'template_i0480uq', form.current, 'wrIw0InWDAunh8ibO')
+    emailjs.sendForm('service_oyr457', 'template_0uq', form.current, 'wrInWDAunh8ibO') //these are wrong credentials in order to see whether i have implemented or not refer the video which i was attached in the mail
       .then((result) => {
           console.log(result.text);
       }, (error) => {
