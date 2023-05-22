@@ -1,0 +1,171 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact1 {
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+  }
+  
+  .contact2 {
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .label-text {
+    display: none;
+  }
+  
+  .input-line {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 80%;
+    position: relative;
+  }
+  
+  .invalid {
+    border: none;
+    border-bottom: 2px solid red;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 80%;
+    position: relative;
+  }
+  
+  .input-line::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    transform-origin: top left;
+  }
+  
+  .input-line:focus::placeholder,
+  .input-line:not(:placeholder-shown)::placeholder {
+    transform: translateY(-100%);
+    font-size: 12px;
+  }
+  
+  label {
+    display: none;
+  }
+  
+  textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+    resize: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  textarea:focus {
+    border-bottom: 1px solid blue;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .error-msg {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .submit-button {
+    width: 150px;
+    height: 40px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #ddd;
+  }
+  
+  .submit-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .chat-button-container {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+  
+  .chat-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .contact1,
+    .contact2 {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  

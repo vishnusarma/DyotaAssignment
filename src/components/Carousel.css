@@ -1,0 +1,37 @@
+.carousel-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  
+  .carousel-container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+  }
+  
+  
+  .slick-dots {
+    bottom: -25px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black;
+  }
+  

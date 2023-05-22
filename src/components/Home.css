@@ -1,0 +1,56 @@
+.container {
+  max-width: 100%;
+  padding: 20px;
+  background-image: url('../Assets/one.jpg');
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 0 0 60%;
+  padding-right: 20px;
+}
+
+.image {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .text, .image {
+    flex: 1 1 auto;
+  }
+}
+
+.container h1 {
+  font-size: 55px;
+  color: black;
+  font-family: poppins;
+}
+
+.container p {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-family: poppins;
+  color: rgb(6, 27, 221);
+  font-weight: bold;
+}
+

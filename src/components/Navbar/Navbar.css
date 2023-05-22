@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Montserrat:wght@900&family=Recursive&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #00828c;
+}
+.logo{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    animation: multicolor 2s infinite;
+}
+@keyframes multicolor {
+    0% { color: blue; }
+    25% { color: red; } 
+    50% { color: black; } 
+    75% { color: orange; } 
+    100% { color: yellow; } 
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: poppins;
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 100px;
+  }
+  .links .active a{
+    color: yellow;
+  }
+
+.mobile-view{
+    display: none;
+}
+li.active {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+@media screen and (max-width: 780px){
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .links{
+        display: none;
+    }
+    .links-mobile-view{
+        position:absolute;
+        display: block;
+        list-style: none;
+        background-color: #005469;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+
+
+.mobile-view{
+display: block;
+position: absolute;
+font-size: 30px;
+color: white;
+background-color: #00828c;
+border: none;
+outline: none;
+top: 15px;
+right: 25px;
+}
+
+i{
+    cursor: pointer;
+}
+}
